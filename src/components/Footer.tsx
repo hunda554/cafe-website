@@ -105,7 +105,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} Yo Burger & Restaurant, Adama. Taste is Everything.</p>
+          <div className="space-y-1 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Yo Burger & Restaurant, Adama. All Rights Reserved.</p>
+            <p className="text-[11px] text-white/60">
+              Developed by <span className="text-white font-medium">Mihreteab & Hundaol</span> at{' '}
+              <a
+                href="https://horizonweb.horizonweb.workers.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#F5A623] hover:text-[#FF3B2F] font-semibold underline underline-offset-2 transition-colors"
+              >
+                Horizon Web Development
+              </a>
+            </p>
+          </div>
 
           <button
             onClick={scrollToTop}
